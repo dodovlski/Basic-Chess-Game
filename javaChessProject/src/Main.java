@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-
+    // Date Updated
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         ChessBoard board = new ChessBoard();
@@ -15,8 +15,8 @@ public class Main {
                 System.out.print("Enter the location of the piece:");
                 String from = reader.next();
                 piece = board.getPieceAt(from);
-            }
-            while (piece == null || piece.getColor() != (board.isWhitePlaying() ? ChessBoard.WHITE : ChessBoard.BLACK));
+            } while (piece == null
+                    || piece.getColor() != (board.isWhitePlaying() ? ChessBoard.WHITE : ChessBoard.BLACK));
 
             String to;
             do {
